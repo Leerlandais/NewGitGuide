@@ -1,87 +1,88 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-        var button = document.getElementById('step2');
-            button.addEventListener('click', function() {
-            document.getElementById('guide').textContent = "On a créé une copie du Grand Projet sur nos PC.";
-            document.getElementById('StepText').innerHTML = showStep3;
-            document.getElementById('downmid').style.color = "red";
-            document.getElementById('downmid').textContent = "GRAND PROJET";
-
+        var button = document.getElementById("step2");
+            button.addEventListener("click", function() {
+            document.getElementById("guide").style.opacity = "1";
+            document.getElementById("guide").textContent = "On a créé une copie du Grand Projet sur nos PC.";
+            document.getElementById("StepText").innerHTML = showStep3;
+            document.getElementById("downmid").style.color = "firebrick";
+            document.getElementById("downmid").textContent = "GRAND PROJET";
+            
         })
         // Event delegation for dynamically added element               I admit, wholeheartedly that I had to go to Chat for this one. Here's what I asked it, "Everything works up until it tries to declare button3. I believe the problem is because the step3 is contained within the inner.HTML of showStep3. Any advice?". I could see what the problem is but an hour of searching elsewhere didn't help
 
-        var button2 = document.getElementById('step3');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step3') {
-                        document.getElementById('guide').textContent = "On a créé un endroit sur Github où on pourrait éventuellement mettre nos travaux.";
-                        document.getElementById('StepText').innerHTML = showStep4;
-                        document.getElementById('upleft').style.color = "red";
+        var button2 = document.getElementById("step3");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step3") {
+                        document.getElementById("guide").textContent = "On a créé un endroit sur Github où on pourrait éventuellement mettre nos travaux.";
+                        document.getElementById("StepText").innerHTML = showStep4;
+                        document.getElementById("upleft").style.color = "firebrick";
                         document.getElementById("upleft").style.border = "2px solid";
-                        document.getElementById('downmid').style.color = "black";
-                        document.getElementById('origin').textContent = "Origin";
+                        document.getElementById("downmid").style.color = "black";
+                        document.getElementById("origin").textContent = "Origin";
         }
         })
 
-        var button3 = document.getElementById('step4');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step4') {
-                        document.getElementById('guide').textContent = "On ajoute nos images à notre copie du Grand Projet.";
-                        document.getElementById('StepText').innerHTML = showStep5;
-                        document.getElementById('upleft').style.color = "black";
-                        document.getElementById('downmid').style.color = "red";
-                        document.getElementById('downmid').textContent = "GRAND PROJET + Images";
+        var button3 = document.getElementById("step4");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step4") {
+                        document.getElementById("guide").textContent = "On ajoute nos images à notre copie du Grand Projet.";
+                        document.getElementById("StepText").innerHTML = showStep5;
+                        document.getElementById("upleft").style.color = "black";
+                        document.getElementById("downmid").style.color = "firebrick";
+                        document.getElementById("downmid").textContent = "GRAND PROJET + Images";
         }
         })
 
-        var button4 = document.getElementById('step5');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step5') {
-                        document.getElementById('StepText').innerHTML = showStep6;
-                        document.getElementById('downmid').style.color = "black";
+        var button4 = document.getElementById("step5");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step5") {
+                        document.getElementById("StepText").innerHTML = showStep6;
+                        document.getElementById("downmid").style.color = "black";
                 }
 
         })
 
-        var button5 = document.getElementById('step6');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step6') {
-                        document.getElementById('StepText').innerHTML = showStep7;
+        var button5 = document.getElementById("step6");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step6") {
+                        document.getElementById("StepText").innerHTML = showStep7;
                 }
             })
         
-        var button6 = document.getElementById('step7');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step7') {
-                        document.getElementById('StepText').innerHTML = showStep8;
-                        document.getElementById('upleft').style.color = "red";
-                        document.getElementById('upleft').textContent = "GRAND PROJET + Images";
+        var button6 = document.getElementById("step7");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step7") {
+                        document.getElementById("StepText").innerHTML = showStep8;
+                        document.getElementById("upleft").style.color = "firebrick";
+                        document.getElementById("upleft").textContent = "GRAND PROJET + Images";
                 }
             })
 
-        var button7 = document.getElementById('step8');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step8') {
-                        document.getElementById('StepText').innerHTML = showStep9;
-                        document.getElementById('upleft').style.color = "black";
-                        document.getElementById('upmid').innerHTML = "J'ai, fini Chef. C'est bien pour toi? <br>=====>";
-                        document.getElementById('upmid').style.color = "red";
+        var button7 = document.getElementById("step8");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step8") {
+                        document.getElementById("StepText").innerHTML = showStep9;
+                        document.getElementById("upleft").style.color = "black";
+                        document.getElementById("upmid").innerHTML = "J'ai, fini Chef. C'est bien pour toi? <br>=====>";
+                        document.getElementById("upmid").style.color = "firebrick";
                 }
             })
 
-        var button8 = document.getElementById('step9');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'step9') {
-                        document.getElementById('StepText').innerHTML = showStep10;
-                        document.getElementById('upmid').style.color = "black";
-                        document.getElementById('upright').style.color = "red";
-                        document.getElementById('upright').textContent = "GRAND PROJET + Images";
-                        document.getElementById('upmid').textContent = "";
+        var button8 = document.getElementById("step9");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "step9") {
+                        document.getElementById("StepText").innerHTML = showStep10;
+                        document.getElementById("upmid").style.color = "black";
+                        document.getElementById("upright").style.color = "firebrick";
+                        document.getElementById("upright").textContent = "GRAND PROJET + Images";
+                        document.getElementById("upmid").textContent = "";
                 }
             })
         
-        var button9 = document.getElementById('refresh');
-            document.addEventListener('click', function(event) {
-                if (event.target && event.target.id === 'refresh') {
+        var button9 = document.getElementById("refresh");
+            document.addEventListener("click", function(event) {
+                if (event.target && event.target.id === "refresh") {
                         location.reload()
                 }
             })
